@@ -44,9 +44,8 @@ class splashscreen : AppCompatActivity() {
 
                fusedLocationClient.lastLocation
                    .addOnSuccessListener {
-                                     it ->
-                          // location : Location? ->
-                       var currentLocation : Location? = it
+
+                       val currentLocation : Location? = it
 
                        if (currentLocation == null ){
                            NewLocation()
@@ -132,7 +131,7 @@ class splashscreen : AppCompatActivity() {
     }
 
     private fun LocationEnabled(): Boolean {
-        var locationManager=getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        val locationManager=getSystemService(Context.LOCATION_SERVICE) as LocationManager
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
     }
 
