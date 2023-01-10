@@ -29,7 +29,7 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/updated_at"
+                android:id="@+id/updatedat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20 April 2012, 20:08 PM"
@@ -110,7 +110,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/temp_min"
+                    android:id="@+id/tempmin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Min Temp: 05:05 AM" />
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/temp_max"
+                    android:id="@+id/tempmax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Max Temp: 05:05 PM" />

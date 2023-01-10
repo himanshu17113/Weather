@@ -44,11 +44,11 @@ class MainActivity : AppCompatActivity() {
         val editor = WeatherData.edit()
 
          binding.address.text = WeatherData.getString("Address",null)
-        binding.updatedAt.text = WeatherData.getString("UpdatedAtText",null)
+        binding.updatedat.text = WeatherData.getString("UpdatedAtText",null)
         binding.status.text = WeatherData.getString("WeatherDescription",null)
         binding.temp.text = WeatherData.getString("Temp",null)
-        binding.tempMin.text = WeatherData.getString("TempMin",null)
-        binding.tempMax.text = WeatherData.getString("TempMax",null)
+        binding.tempmin.text = WeatherData.getString("TempMin",null)
+        binding.tempmax.text = WeatherData.getString("TempMax",null)
         binding.sunrise.text =
         SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(WeatherData.getLong("Sunrise",0)*1000))
         binding.sunset.text =
@@ -137,17 +137,17 @@ class MainActivity : AppCompatActivity() {
                         }
 
                         /* Populating extracted data into our views */
-                        findViewById<TextView>(R.id.address).text = address
-                        findViewById<TextView>(R.id.updated_at).text =  updatedAtText
-                        findViewById<TextView>(R.id.status).text = weatherDescription
-                        findViewById<TextView>(R.id.temp).text = temp
-                        findViewById<TextView>(R.id.temp_min).text = tempMin
-                        findViewById<TextView>(R.id.temp_max).text = tempMax
-                        findViewById<TextView>(R.id.sunrise).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise*1000))
-                        findViewById<TextView>(R.id.sunset).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset*1000))
-                        findViewById<TextView>(R.id.wind).text = windSpeed
-                        findViewById<TextView>(R.id.pressure).text = pressure
-                        findViewById<TextView>(R.id.humidity).text = humidity
+                        binding.address.text = address
+                        binding.updatedat.text =  updatedAtText
+                        binding.status.text = weatherDescription
+                        binding.temp.text = temp
+                        binding.tempmin.text = tempMin
+                        binding.tempmax.text = tempMax
+                        binding.sunrise.text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise*1000))
+                        binding.sunset.text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset*1000))
+                        binding.wind.text = windSpeed
+                        binding.pressure.text = pressure
+                        binding.humidity.text = humidity
                         binding.feellike.text = feellike
 
                     } catch (e: Exception) {
