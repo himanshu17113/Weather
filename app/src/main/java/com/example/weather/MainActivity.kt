@@ -154,7 +154,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<data>, t: Throwable) {
 
-                    Toast.makeText(this@MainActivity,"open net", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity,"Open your internet for latest Weather", Toast.LENGTH_LONG).show()
                 }
 
             } )

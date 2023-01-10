@@ -60,9 +60,7 @@ class splashscreen : AppCompatActivity() {
                            },2000)
                            Log.i("Location",currentLocation.longitude.toString())
                        }
-
                    }
-
            }
            else
            { RequestLocation() }
